@@ -1,0 +1,26 @@
+# 防止 GitHub 长时间不 commit 导致 Action 自动停用
+name: 'Monthly Update Action'
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Update
+      run: |
+        echo "one month" >> monthly.log
+    - name: Commit files
+      run: |
+        git config --local user.name github-actions[bot]
+        git config --local user.email github-actions[bot]@users.noreply.github.com
+        git status
+        git add monthly.log
+        git commit -m "Monthly update"
+        git log
+        git push
