@@ -216,7 +216,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div name="sfcxzysx" class="radio"><span>今日是否有涉及涉疫情的管控措施是 Are you under any control measures related to the COVID-19 today?<i class="icon iconfont icon-shuoming"></i><em></em></span>
+                                <div name="sfcxzysx" class="radio"><span>今日是否有涉及涉疫情的管控措施 Are you under any control measures related to the COVID-19 today?<i class="icon iconfont icon-shuoming"></i><em></em></span>
                                     <div>
                                         <div @click="info.sfcxzysx=1"><span :class="{active: info.sfcxzysx==1}"><i></i></span> <span>是 Yes</span></div>
                                         <div @click="info.sfcxzysx=0"><span :class="{active: info.sfcxzysx==0}"><i></i></span> <span>否 No</span></div>
