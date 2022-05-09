@@ -48,3 +48,6 @@
    Actions > @zju-health-report/action Demo > Disable workflow。
    
    Actions > Monthly Update Action > Disable workflow。
+
+
+ps.如果显示打卡信息已改变，请手动打卡，可以把第97行的return Flase改成return True，或是重新生成一遍form.txt
