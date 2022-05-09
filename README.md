@@ -50,4 +50,4 @@
    Actions > Monthly Update Action > Disable workflow。
 
 
-2022/5/9:健康打卡页面修正了“今日是否有涉及涉疫情的管控措施是”，将form.TXT替换即可
+2022/5/9:健康打卡页面修正了“今日是否有涉及涉疫情的管控措施是”的文本错误，将form.TXT替换即可
