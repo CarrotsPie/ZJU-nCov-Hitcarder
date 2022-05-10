@@ -50,4 +50,4 @@
    Actions > Monthly Update Action > Disable workflow。
 
 
-ps.如果显示打卡信息已改变，请手动打卡，可以把第97行的return Flase改成return True，或是重新生成一遍form.txt
+2022/5/9:健康打卡页面修正了“今日是否有涉及涉疫情的管控措施是”的文本错误，将form.TXT替换即可
