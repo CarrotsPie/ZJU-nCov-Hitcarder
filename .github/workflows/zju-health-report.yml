@@ -1,9 +1,9 @@
 name: 'ZJU-nCov-Hitcarder Action'
 
 on:
-workflow_dispatch:
-schedule:
-   - cron: '0 7 * * *'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 22 * * *'
 
 jobs:
   main:
@@ -34,3 +34,4 @@ jobs:
         run: |
           python3 ./hitcarder.py
         shell: bash
+
