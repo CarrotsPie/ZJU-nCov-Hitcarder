@@ -68,7 +68,16 @@
                                 </div>
                             </li>
 
-
+                                                        <li>
+                                <div name="internship" class="radio"><span>今日是否进行实习。Are you doing an internship today?<i class="icon iconfont icon-shuoming"></i><em></em></span>
+                                    <div>
+                                        <div @click="info.internship=2"><span :class="{active: info.internship==2}"><i></i></span> <span>校内实习 On-campus internship</span></div>
+                                        <div @click="info.internship=3"><span :class="{active: info.internship==3}"><i></i></span> <span>校外实习Off-campus internship</span></div>
+                                        <div @click="info.internship=1"><span :class="{active: info.internship==1}"><i></i></span> <span>否 No</span></div>
+                                    </div>
+                                </div>
+                            </li>
+                            
                             <li v-show="info.sfzx==='0' && !ipCtrl1 && sfzgn == 0" name="dwszgj">
                                 <div class="text" @click="mapInit()">
                                     <span>所在地点（请打开手机位置功能，并在手机权限设置中选择允许访问位置信息）Your location (Please turn on the location access function on your mobile phone and allow App to access your location)<i class="icon iconfont icon-shuoming"></i></span>
