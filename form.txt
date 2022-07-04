@@ -69,7 +69,7 @@
                             </li>
 
                                                         <li>
-                                <div name="internship" class="radio"><span>今日是否进行实习。Are you doing an internship today?<i class="icon iconfont icon-shuoming"></i><em></em></span>
+                                <div name="internship" class="radio"><span>今日是否进行实习或实践。Are you doing an internship today?<i class="icon iconfont icon-shuoming"></i><em></em></span>
                                     <div>
                                         <div @click="info.internship=2"><span :class="{active: info.internship==2}"><i></i></span> <span>校内实习 On-campus internship</span></div>
                                         <div @click="info.internship=3"><span :class="{active: info.internship==3}"><i></i></span> <span>校外实习Off-campus internship</span></div>
