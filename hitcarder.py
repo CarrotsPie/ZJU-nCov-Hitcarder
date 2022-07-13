@@ -179,8 +179,8 @@ def main(username, password):
         username: (str) 浙大统一认证平台用户名（一般为学号）
         password: (str) 浙大统一认证平台密码
     """
-    sleep_time = random.randint(0,900)
-    for i in range(sleep_time)
+    sleep_time = random.randint(0,9000)
+    for i in range(sleep_time):
         time.sleep(1)
      
     hit_carder = HitCarder(username, password)
