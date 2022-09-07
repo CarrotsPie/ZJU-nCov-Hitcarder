@@ -139,7 +139,7 @@ class HitCarder(object):
         new_info['sfzx'] = old_info['sfzx'] # 在校
         new_info['sfymqjczrj'] = old_info['sfymqjczrj'] # 入境
         new_info['sfqrxxss'] = 1 # 属实
-        new_info['campus'] = '紫金港校区' #校区
+        new_info['campus'] = '玉泉校区' #校区
         new_info['internship'] = old_info['internship'] # 实习
         #new_info['verifyCode'] =  ocr.classification(resp.content)#验证码
 
