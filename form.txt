@@ -48,7 +48,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li v-if="info.sfzx==='0'">
+                            <li>
                                 <div name="sfymqjczrj" class="radio"><span>同住人员当天是否存在发热症状、红黄码状态或者14天内从境外返校情况。Do the people living with you have a fever, or their health code turned red or yellow, or will the people living with you return from abroad within 14 days?<i class="icon iconfont icon-shuoming"></i><em></em></span>
                                     <div>
                                         <div @click="info.sfymqjczrj=1"><span :class="{active: info.sfymqjczrj==1}"><i></i></span> <span>是 Yes</span></div>
