@@ -10,7 +10,7 @@ import os
 import sys
 import message
 import ddddocr
-
+import random
 
 class HitCarder(object):
     """Hit carder class
@@ -139,7 +139,7 @@ class HitCarder(object):
         new_info['sfzx'] = old_info['sfzx'] # 在校
         new_info['sfymqjczrj'] = old_info['sfymqjczrj'] # 入境
         new_info['sfqrxxss'] = 1 # 属实
-        new_info['campus'] = '紫金港校区' #校区
+        new_info['campus'] = '西溪校区' #校区
         new_info['internship'] = old_info['internship'] # 实习
         #new_info['verifyCode'] =  ocr.classification(resp.content)#验证码
 
@@ -179,7 +179,10 @@ def main(username, password):
         username: (str) 浙大统一认证平台用户名（一般为学号）
         password: (str) 浙大统一认证平台密码
     """
-
+    sleep_time = random.randint(0,9000)
+    for i in range(sleep_time):
+        time.sleep(1)
+     
     hit_carder = HitCarder(username, password)
     print("[Time] %s" % datetime.datetime.now().strftime(
         '%Y-%m-%d %H:%M:%S'))
